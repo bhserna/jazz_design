@@ -1,0 +1,15 @@
+<% content_for :sidebar do %>
+  <div id="sidebar" class="grid_3" >
+    <div id="my-jazz" class="sidebar-list round">
+      <h1>Mi Jazz</h1>
+      <ul>
+        <li><%= link_to "Profile", "#" %></li>
+        <li><%= link_to "Favoritos", "#" %></li>
+        <li><%= link_to "Cotizaciones", "#" %></li>
+        <li><%= link_to "Órdenes", "#" %></li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<%= render :file => 'layouts/application' %>

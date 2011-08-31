@@ -1,0 +1,44 @@
+<% content_for :brand do %>
+  <div class="grid_2 alpha blue-back round">
+    <%= brand_thumb %>
+  </div>
+  <div class="grid_10 omega blue-back round">
+    <div class="description">
+      <div>
+        <p>
+          Las bombas dosificadoras de engranes de la Serie B-9000 son el
+          estándar industrial para la verdadera dosificación de precisión,
+          para aplicaciones difíciles en una gran variedad de procesos
+          industriales...
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<% content_for :sidebar do %>
+  <div id="sidebar" class="grid_3" >
+    <div id="categories" class="sidebar-list round">
+      <h1>Categorías de GP:50</h1>
+      <ul>
+        <li>Bomba dosificadora</li>
+        <li><%= link_to "Controlador Batch", "#" %></li>
+        <li><%= link_to "Controlador de Flujo", "#" %></li>
+        <li><%= link_to "Controlador de Presión", "#" %></li>
+        <li><%= link_to "Controlador de Velocidad", "#" %></li>
+        <li><%= link_to "Data logger", "#" %></li>
+        <li><%= link_to "Medidor de Flujo", "#" %></li>
+        <li><%= link_to "Medidor de Presión", "#" %></li>
+        <li><%= link_to "Interruptor de Flujo", "#" %></li>
+        <li><%= link_to "Sensor de Flujo", "#" %></li>
+        <li><%= link_to "Transductor de Presión", "#" %></li>
+        <li><%= link_to "Transmisor de Flujo", "#" %></li>
+        <li><%= link_to "Transmisor de Nivel", "#" %></li>
+        <li><%= link_to "Transmisor de Presión", "#" %></li>
+        <li><%= link_to "Transmisor de Temperatura", "#" %></li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<%= render :file => 'layouts/application' %>

@@ -1,0 +1,45 @@
+<div id="content" class="grid_9">
+  <h1>Cotizacion ID - 1098234</h1>
+  
+  <div class="blue-back round">
+    <div class="content-block">
+      <div>
+        <table class="quote">
+          <tr class="blue-back">
+            <th>Producto</th>
+            <th>Num. de parte</th>
+            <th>Cantidad</th>
+            <th class="total">Total</th> 
+          </tr>
+          <% 2.times do |i| %>
+          <% if i % 2 == 1 %>
+            <tr class="blue-back">
+          <% else %>
+            <tr>
+          <% end %>
+            <td><%= link_to "Medidor de presión industrial - Modelos 211, 311, 111", "#" %></td>
+            <td><%= link_to "311-AB-FG-C/A-ASE", "#" %></td>
+            <td>3</td>
+            <td class="total">$1000.00</td>
+          </tr>
+          <% end %>
+          <tr>
+            <td></td>
+            <td></td>
+            <td class="total">Neto:</td>
+            <td class="total">$2000.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td class="total"><strong>Neto + IVA:</strong></td>
+            <td class="total"><strong>$2500.00</strong></td>
+          </tr>
+        </table>
+        <div class="paypal-button">
+          <%= link_to "Pagar con Paypal", "#" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

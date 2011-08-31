@@ -1,0 +1,80 @@
+<% content_for :message do %>
+  Distribuimos productos para la <strong>instrumentación, medición y control de procesos</strong>
+<% end %>
+
+<% content_for :sidebar do %>
+  <div id="sidebar" class="grid_3" >
+    <div id="brands" class="sidebar-list round">
+      <h1>Marcas</h1>
+      <ul>
+        <li><%= link_to "GP:50", "#" %></li>
+        <li><%= link_to "RCM Industries", "#" %></li>
+        <li><%= link_to "Seametrics", "#" %></li>
+        <li><%= link_to "Zenith Pumps", "#" %></li>
+      </ul>
+    </div>
+    
+    <div id="categories" class="sidebar-list round">
+      <h1>Categorías</h1>
+      <ul>
+        <li><%= link_to "Bomba dosificadora", "#" %></li>
+        <li><%= link_to "Controlador Batch", "#" %></li>
+        <li><%= link_to "Controlador de Flujo", "#" %></li>
+        <li><%= link_to "Controlador de Presión", "#" %></li>
+        <li><%= link_to "Controlador de Velocidad", "#" %></li>
+        <li><%= link_to "Data logger", "#" %></li>
+        <li><%= link_to "Medidor de Flujo", "#" %></li>
+        <li><%= link_to "Medidor de Presión", "#" %></li>
+        <li><%= link_to "Interruptor de Flujo", "#" %></li>
+        <li><%= link_to "Sensor de Flujo", "#" %></li>
+        <li><%= link_to "Transductor de Presión", "#" %></li>
+        <li><%= link_to "Transmisor de Flujo", "#" %></li>
+        <li><%= link_to "Transmisor de Nivel", "#" %></li>
+        <li><%= link_to "Transmisor de Presión", "#" %></li>
+        <li><%= link_to "Transmisor de Temperatura", "#" %></li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<div id="content" class="grid_9" >
+
+  <h1>Productos destacados</h1>
+  <ul class="products-gallery">
+    <li class="grid_3 alpha product">
+      <%= product %>
+    </li>
+    <li class="grid_3 product">
+      <%= product %>
+    </li>
+    <li class="grid_3 omega product">
+      <%= product %>
+    </li>
+      <li class="grid_3 alpha product">
+      <%= product %>
+    </li>
+    <li class="grid_3 product">
+      <%= product %>
+    </li>
+    <li class="grid_3 omega product">
+      <%= product %>
+    </li>
+  </ul>
+  
+  <h1>Marcas</h1>
+  <ul class="brands-gallery">
+    <li class="brand">
+      <%= brand_thumb %>
+    </li>
+    <li class="brand">
+      <%= brand_thumb %>
+    </li>
+    <li class="brand">
+      <%= brand_thumb %>
+    </li>
+    <li class="brand">
+      <%= brand_thumb %>
+    </li>
+  </ul>
+
+</div>

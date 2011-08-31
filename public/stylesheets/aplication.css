@@ -1,0 +1,375 @@
+body {
+    margin:  0px;
+    padding: 0px;
+}
+
+body * {
+    margin:  0px;
+    padding: 0px;
+    font-family: helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #3573c3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a img {
+    border: none;
+}
+
+h1 {
+    font-size: 14px;
+    margin: 15px 0px 10px 0px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+div#header {
+    height: 100px;
+}
+
+ul#top-nav {
+    height: 20px;
+    margin-top: 5px;
+    list-style: none;    
+}
+
+ul#top-nav li {
+    float: right;
+    padding-left: 25px;
+}
+
+div#principal-bar {
+    height:75px;    
+}
+
+div#nav-bar ul {
+    list-style: none;
+    margin-top: 15px;
+    height: 60px;
+    background-image: url("../images/top-nav-bar.png");
+}
+
+div#nav-bar li {
+    float: left;
+    margin: 10px 0px 10px 16px;
+}
+
+div#nav-bar a {
+    display: block;
+    padding: 13px;
+}
+
+div#search {
+    margin-top: 15px;
+    height: 60px;
+    background: url("../images/top-search.png") 0 0 no-repeat;
+}
+
+form#search {
+    padding: 20px 0px 20px 25px;
+}
+
+input#submit {
+}
+
+input#search {
+    width: 198px;
+    height: 18px;
+}
+
+div#message {
+    text-align: center;
+    font-size: 16px;
+    margin: 25px 0px 25px 0px;
+    color: #ababab;
+}
+
+div#message strong {
+    font-size: 16px;
+}
+
+div#footer {
+    background-color: #e0e0e0;
+}
+
+div#listing {
+    padding: 20px 0px 20px 0px;
+}
+
+div#listing h1{
+    margin: 0px;
+    font-size: 13px;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 10px;
+    height: 17px;
+}
+
+div#listing ul {
+    list-style: none
+}
+
+div#listing li {
+    margin-top: 13px;
+}
+
+div#paypal-img img {
+    float: right;
+    border: 1px solid #cacaca;
+}
+
+div.sidebar-list {
+    margin-bottom: 40px;
+    padding: 15px;
+    background-color: #e0e0e0;/*#e6eef8*/
+}
+
+div.sidebar-list h1 {
+    margin:0px;
+    font-size: 13px;
+    width:190px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+
+div.sidebar-list ul {
+    list-style: none;
+    width:190px;
+}
+
+div.sidebar-list li {
+    margin-top: 13px;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+ul.products-gallery li {
+    background: url("../images/product-background.png");
+    height: 220px;
+    margin-bottom:30px;
+}
+
+div.product-thumb, div.brand-thumb{
+    width:120px;
+    height:120px;
+    background: white;
+    border: 1px solid #cacaca; 
+}
+
+ul.products-gallery .product-thumb {
+    margin: 20px auto 25px auto;
+}
+
+div.product-thumb img, div.brand-thumb img {
+    display: block;
+    margin: 10px auto;
+}
+
+ul.products-gallery p {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+ul.brands-gallery {
+    list-style:none;
+    height: 200px;
+    background: url("../images/brands-background.png");
+    margin-bottom: 30px;
+    padding: 0px 21px 0px 21px;
+}
+
+ul.brands-gallery li {
+    float:left;
+}
+
+ul.brands-gallery .brand-thumb {
+    margin: 40px 0px 40px 34px;
+}
+
+.quantity {
+    color: #cacaca;
+    font-size: 12px;
+}
+
+.blue-back {
+    background-color: #e6eef8;
+    padding:10px 0px 10px 0px;
+    margin-bottom: 30px;
+}
+
+ul.products{
+    list-style: none;
+}
+
+div.blue-back .product-thumb,div.blue-back .brand-thumb {
+    margin: auto;
+}
+
+div.description, div.content-block {
+    margin: auto;
+    background-color: white;
+    border: 1px solid #cacaca;
+}
+
+ul.products div.description {
+    height:120px;
+    width: 520px;
+}
+
+div.description div, div.content-block div{
+    padding: 13px;
+}
+
+div.description p {
+    margin-top: 10px;
+}
+
+div#brand div.description {
+    height:120px;
+    width: 760px;
+}
+
+div.big-product-img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+    border: 1px solid #cacaca;
+}
+
+div.big-product-img img{
+    display: block;
+    margin: auto;
+}
+
+.grid_9 div.content-block {
+    width: 680px;
+}
+
+.grid_8 div.content-block {
+    width: 600px;
+}
+
+.grid_6 div.content-block {
+    width: 440px;
+}
+
+
+.grid_4 div.content-block {
+    width: 280px;
+}
+
+div.content-block ul {
+    margin: 10px 0px 10px 15px;
+}
+
+div.content-block li {
+    margin: 3px 0px 3px 0px;
+}
+
+div.description p, div.content-block p {
+    margin: 5px 0px 5px 0px;
+    line-height:150%;
+}
+
+div.content-block td, div.content-block th  {
+    padding: 5px 5px 5px 0px;
+    vertical-align: top;   
+}
+
+table.quotes, table.orders, table.quote, table.order, table.cart-total {
+    width:100%;
+}
+
+table.quote td.total, table.quote th.total, table.order td.total, table.order th.total,
+table.cart-total td.total {
+    text-align: right;
+}
+
+table.quotes td, table.quotes th, table.orders th, table.orders td, table.quote th, table.quote td,
+table.order th, table.order td{
+    min-width: 100px;
+    max-width: 200px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.gray {
+    color: #a0a0a0;
+}
+
+div.price-request-button, div.add-to-cart-button, div.add-to-favorites-button, div.paypal-button,
+div.save-as-quote {
+    display: block;
+    width: 220px;
+    height: 50px;
+    margin: 25px 20px 25px 0px;
+    text-indent: -9999px;
+}
+
+div.price-request-button a, div.add-to-cart-button a, div.add-to-favorites-button a, div.paypal-button a,
+div.save-as-quote a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:transparent url("../images/price-request-button.png") no-repeat top left;
+    outline:none;
+}
+div.price-request-button a {
+    background:transparent url("../images/price-request-button.png") no-repeat top left;
+}
+
+div.add-to-cart-button a {
+    background:transparent url("../images/add-to-cart-button.png") no-repeat top left;
+}
+
+div.add-to-favorites-button a {
+    background:transparent url("../images/add-to-favorites.png") no-repeat top left;
+}
+
+div.save-as-quote a {
+    background:transparent url("../images/save-as-quote.png") no-repeat top left;
+}
+
+div.paypal-button {
+    display:block;
+    margin: 25px 0px 25px auto;
+    padding-right:0px;
+}
+
+div.content-block div.paypal-button {
+    padding-right:0px;
+}
+
+div.paypal-button a {
+    background:transparent url("../images/paypal-button.png") no-repeat top left;
+}
+
+div.price-request-button a:hover, div.add-to-cart-button a:hover, div.add-to-favorites-button a:hover,
+div.paypal-button a:hover, div.save-as-quote a:hover {
+    background-position:0 -50px;
+}
+
+div.cart-actions div.paypal-button, div.cart-actions div.save-as-quote {
+    margin: 20px auto 0px auto;
+    padding: 0px;
+}
+
+h1.cart-title {
+    margin-top: 0px;
+}
+
+li.line-item div.content-block {
+    height: 120px;
+}

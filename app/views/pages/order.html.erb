@@ -1,0 +1,56 @@
+<div id="content" class="grid_9">
+  <h1>Orden ID - 1098234</h1>
+  
+  <% content_block do %>
+    <h2>Descripción</h2>
+    <p>Esta orden es para la prueba del 28 de enero</p>
+  <% end %>
+  
+  <% content_block do %>
+    <table class="order">
+      <tr class="blue-back">
+        <th>Producto</th>
+        <th>Num. de parte</th>
+        <th>Cantidad</th>
+        <th class="total">Total</th> 
+      </tr>
+      <% 2.times do |i| %>
+      <% if i % 2 == 1 %>
+        <tr class="blue-back">
+      <% else %>
+        <tr>
+      <% end %>
+        <td>Medidor de presión industrial - Modelos 211, 311, 111</td>
+        <td>311-AB-FG-C/A-ASE</td>
+        <td>3</td>
+        <td class="total">$1000.00</td>
+      </tr>
+      <% end %>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="total">Neto:</td>
+        <td class="total">$2000.00</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="total"><strong>Neto + IVA:</strong></td>
+        <td class="total"><strong>$2500.00</strong></td>
+      </tr>
+    </table>
+  <% end %>
+  <% content_block do %>
+    <h2>Dirección de Destino</h2>
+    <p><strong>Nombre:</strong> Benito H. Serna</p>
+    <p><strong>Compañia:</strong> Jazz Controls, SA de CV</p>
+    <p><strong>Dirección 1:</strong> Villa ahumada #233 Col. Villas de anahuac</p>
+    <p><strong>Dirección 2:</strong></p>
+    <p><strong>Ciudad:</strong> San Nicolas de los Garza</p>
+    <p><strong>Estado:</strong> Nuevo Leon</p>
+    <p><strong>Pais:</strong> Mexico</p>
+    <p><strong>Codigo postal:</strong> 66422</p>
+    <p><strong>Telefono:</strong> 83320161</p>
+  <% end %>
+
+</div>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JazzDesign</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+  <div id="header" class="container_12">
+    <ul id="top-nav" class="grid_12">          
+      <li><%= link_to "Contacto", "#" %></li>
+      <li><%= link_to "Vender", "#" %></li> 
+      <li><%= link_to "Comprar", "#" %></li>
+    </ul>     
+    <div id="principal-bar">
+      <div id="logo" class="grid_4">
+        <%= link_to image_tag("logo-azul.png"), "#" %>
+      </div>
+      <div id="nav-bar" class="grid_4">
+        <ul>
+          <li class="register"><%= link_to "Registrarse", "#" %></li>
+          <li class="sign-in"><%= link_to "Acceder", "#" %></li>
+        </ul>
+      </div>
+      <div id="search" class="grid_4">
+        <%= form_tag "#", :method => 'get', :id => "search" do %>
+          <%= text_field_tag :search, params[:search] %>
+          <%= submit_tag "Buscar", :id => "submit", :name => nil %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="wrapper" class="container_12">
+    <div id="message" class="grid_12" >
+      <%= yield :message %>
+    </div>
+    <div id="brand" class="grid_12" >
+      <%= yield :brand %>
+    </div>    
+    <%= yield :sidebar %>
+    <%= yield %>
+  </div>
+  
+  <div id="footer">
+    <div id="listing" class="container_12">
+      <div id="brands-in-footer" class="grid_3">
+        <h1>Marcas</h1>
+        <ul>
+          <li><%= link_to "GP:50", "#" %></li>
+          <li><%= link_to "RCM Industries", "#" %></li>
+          <li><%= link_to "Seametrics", "#" %></li>
+          <li><%= link_to "Zenith Pumps", "#" %></li>
+        </ul>
+      </div>
+      
+      <div id="categories-in-footer" class="grid_3">
+        <h1>Categorías</h1>
+        <ul>
+          <li><%= link_to "Bomba dosificadora", "#" %></li>
+          <li><%= link_to "Controlador Batch", "#" %></li>
+          <li><%= link_to "Controlador de Flujo", "#" %></li>
+          <li><%= link_to "Controlador de Presión", "#" %></li>
+          <li><%= link_to "Controlador de Velocidad", "#" %></li>
+          <li><%= link_to "Data logger", "#" %></li>
+          <li><%= link_to "Medidor de Flujo", "#" %></li>
+          <li><%= link_to "Medidor de Presión", "#" %></li>
+        </ul>
+      </div>
+      
+      <div id="categories-in-footer-2" class="grid_3">
+        <h1></h1>
+        <ul>
+          <li><%= link_to "Interruptor de Flujo", "#" %></li>
+          <li><%= link_to "Sensor de Flujo", "#" %></li>
+          <li><%= link_to "Transductor de Presión", "#" %></li>
+          <li><%= link_to "Transmisor de Flujo", "#" %></li>
+          <li><%= link_to "Transmisor de Nivel", "#" %></li>
+          <li><%= link_to "Transmisor de Presión", "#" %></li>
+          <li><%= link_to "Transmisor de Temperatura", "#" %></li>
+        </ul>
+      </div>
+      
+      <div id="paypal-img" class="grid_3">
+        <%= image_tag("paypal.png") %> 
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

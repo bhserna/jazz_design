@@ -1,0 +1,30 @@
+<div id="content" class="grid_9">
+  <h1>Mis Cotizaciones <span class="quantity">20</span></h1>
+  
+  <div class="blue-back round">
+    <div class="content-block">
+      <div>
+        <table class="quotes">
+          <tr class="blue-back">
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Fecha</th>
+            <th>Total</th> 
+          </tr>
+          <% 10.times do |i| %>
+          <% if i % 2 == 1 %>
+            <tr class="blue-back">
+          <% else %>
+            <tr>
+          <% end %>
+            <td><%= link_to "23453452", "#" %></td>
+            <td>Mi cotización</td>
+            <td>30 sept 2007</td>
+            <td>$1000.00</td>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div id="content" class="container_12">
+  
+  <h1 class="cart-title grid_12">2 Artículos en el Carrito</h1>
+  
+  <ul id="line-items" class="products grid_8">
+    <% 3.times do %>
+      <li class="line-item">
+        <div class="grid_2 alpha blue-back round">
+          <%= product_thumb %>
+        </div>
+        <div class="grid_6 omega">
+          <% content_block do %>
+            <%= link_to truncate("ABCFD-098-CD-frw/er - Medidor de presión industrial - Modelos 211, 311, 111",
+                                  :length => 70), "#" %>
+          
+            <table>
+              <tr>
+                <th>Cantidad</th>
+                <th>Total</th>
+              </tr>
+            </table>          
+          <% end %>          
+        </div>
+      </li>
+    <% end %>
+  </ul>
+  
+  <div class="grid_4">
+    <% content_block do %>
+      <table class="cart-total">
+        <tr>
+          <td>Neto:</td>
+          <td class="total">$3,000.00</td>
+        </tr>
+        <tr>
+          <td><strong>Neto + IVA:</strong></td>
+          <td class="total"><strong>$4,000.00</strong></td>
+        </tr>
+      </table>
+      <div class="cart-actions">
+        <div class="paypal-button">
+          <%= link_to "Pagar con Paypal", "#" %>
+        </div>
+        <div class="save-as-quote">
+          <%= link_to "Guardar como Cotizacion", "#" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
